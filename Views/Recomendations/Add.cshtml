@@ -4,36 +4,100 @@
 }
 
 <!-- ======= Hero Section ======= -->
-    <section id="">
-        <h1>
-            Page for adding reviews
-        </h1>
-        
-            @using (var form = Html.BeginForm())
-            {
-                @Html.ValidationSummary()
+<section id="">
+    <h1>
+        Page for adding reviews
+    </h1>
 
-                <div>
-                    @Html.LabelFor(m => m.Author)
-                    @Html.TextBoxFor(m => m.Author)
+    @using (var form = Html.BeginForm())
+    {
+        @Html.ValidationSummary()
+
+        <div>
+            @Html.LabelFor(m => m.Author)
+            @Html.TextBoxFor(m => m.Author)
+            @Html.ValidationMessageFor(m => m.Author)
+        </div>
+        <div>
+            @Html.LabelFor(m => m.Text)
+            @Html.TextBoxFor(m => m.Text)
+            @Html.ValidationMessageFor(m => m.Text)
+        </div>
+        <div>
+            @Html.LabelFor(m => m.Email)
+            @Html.TextBoxFor(m => m.Email)
+            @Html.ValidationMessageFor(m => m.Email)
+        </div>
+
+        <input type="submit" value="Submit" />
+    }
+</section><!-- End Hero -->
+<!-- ======= Contact Me Section ======= -->
+<section id="contact" class="contact">
+    <div class="container">
+
+        <div class="section-title">
+            <span>Leave a Review</span>
+            <h2>Leave a Review</h2>
+            <p>Please leave a review below.</p>
+        </div>
+
+        <div class="row">
+            
+                @using (var form = Html.BeginForm("Add", "Recomendations", FormMethod.Post, new { @class = "php-email-form" }))
+                {
+
+                @Html.ValidationSummary()
+            <div class="form-row">
+                <div class="col-md-6 form-group">
+                    @Html.TextBoxFor(m => m.Author, new { @class="form-control", name="email", id="email", placeholder="Your Email" })
+
                     @Html.ValidationMessageFor(m => m.Author)
                 </div>
-                <div>
-                    @Html.LabelFor(m => m.Text)
-                    @Html.TextBoxFor(m => m.Text)
-                    @Html.ValidationMessageFor(m => m.Text)
-                </div>
-                <div>
-                    @Html.LabelFor(m => m.Email)
-                    @Html.TextBoxFor(m => m.Email)
+                <div class="col-md-6 form-group">
+                    @Html.TextBoxFor(m => m.Email, new { name = "name", @class="form-control", id="name", placeholder="Your Name" })
+
                     @Html.ValidationMessageFor(m => m.Email)
                 </div>
 
-                <input type="submit" value="Submit" />
-            }
-        
-       
+               
 
 
-    </section><!-- End Hero -->
+            </div>
+                    <div class="form-group">
+                        
+                        @Html.TextBoxFor(m => m.Text, new { @class= "form-control", placeholder = "Leave your review here" })
 
+                        @Html.ValidationMessageFor(m => m.Text)
+                    </div>
+
+                    <div class="text-center"><button type="submit">Submit Review</button></div>
+
+                    }
+                </div>
+                <div class="col-lg-6">
+                    <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                        <div class="form-row">
+                            <div class="col-md-6 form-group">
+                                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                                <div class="validate"></div>
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                                <div class="validate"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <textarea class="form-control" name="message" rows="6" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                            <div class="validate"></div>
+                        </div>
+
+                        
+                    </form>
+                </div>
+
+           
+
+            </div>
+</section><!-- End Contact Me Section -->
