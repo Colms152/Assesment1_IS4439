@@ -110,8 +110,6 @@ C:\Users\Colm Sheehan\source\repos\ColmSheehan\obj\Debug\netcoreapp3.1\ColmSheeh
 C:\Users\Colm Sheehan\source\repos\ColmSheehan\obj\Debug\netcoreapp3.1\ColmSheehan.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Colm Sheehan\source\repos\ColmSheehan\obj\Debug\netcoreapp3.1\Razor\Views\Experience\Education.cshtml.g.cs
 C:\Users\Colm Sheehan\source\repos\ColmSheehan\obj\Debug\netcoreapp3.1\Razor\Views\Experience\Work.cshtml.g.cs
-C:\Users\Colm Sheehan\source\repos\ColmSheehan\obj\Debug\netcoreapp3.1\Razor\Views\Review\Index.cshtml.g.cs
-C:\Users\Colm Sheehan\source\repos\ColmSheehan\obj\Debug\netcoreapp3.1\Razor\Views\Review\Details.cshtml.g.cs
 C:\Users\Colm Sheehan\source\repos\ColmSheehan\obj\Debug\netcoreapp3.1\Razor\Views\Recomendations\Add.cshtml.g.cs
 C:\Users\Colm Sheehan\source\repos\ColmSheehan\obj\Debug\netcoreapp3.1\Razor\Views\Recomendations\Index.cshtml.g.cs
 C:\Users\Colm Sheehan\source\repos\ColmSheehan\obj\Debug\netcoreapp3.1\Razor\Views\Recomendations\Thanks.cshtml.g.cs

@@ -12,8 +12,9 @@
             <h2>Leave a Review</h2>
             <p>Please leave a review below.</p>
         </div>
-        <center>
+        
             <div class="row">
+
                 @using (var form = Html.BeginForm("Add", "Recomendations", FormMethod.Post, new { @class = "email-form" }))
                 {
                     <div class="form-row">
@@ -30,6 +31,16 @@
 
                             @Html.ValidationMessageFor(m => m.Email)
                         </div>
+                        <div class="col-md-6 form-group">
+                            @Html.TextBoxFor(m => m.Age, new { name = "Age", @class = "form-control", id = "Age", placeholder = "Your Age" })
+
+                            @Html.ValidationMessageFor(m => m.Age)
+                        </div>
+                        <div class="col-md-6 form-group">
+                            @Html.TextBoxFor(m => m.Id, new { name = "Id", @class = "form-control", id = "Id", placeholder = "Create a Custom Id" })
+
+                            @Html.ValidationMessageFor(m => m.Id)
+                        </div>
                     </div>
                     <div class="form-group">
                         @Html.TextBoxFor(m => m.Text, new { @class = "form-control", placeholder = "Leave your review here" })
@@ -43,7 +54,7 @@
 
                 }
             </div>
-        </center>       
+            
       
  
 

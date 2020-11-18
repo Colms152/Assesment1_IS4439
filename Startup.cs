@@ -49,13 +49,12 @@ namespace ColmSheehan
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
-                    name: "product",
+                    name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
                 endpoints.MapControllerRoute(
-                    name: "default",
-                    pattern: "Product/{id?}",
-                    new {controller = "Home", action = "Product"}
-                    );    
+                    name: "addreview",
+                    pattern: "{controller=Recomendations}/{action=add}");
+                 
             });
         }
     }

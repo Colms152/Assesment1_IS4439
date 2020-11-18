@@ -56,25 +56,25 @@
 
                 </li>
                 <li class="drop-down">
-                    <a  asp-controller="Recomendations" asp-action="Index">Reviews</a>
+                    <a asp-controller="Recomendations" asp-action="Index">Reviews</a>
                     <ul>
                         <li><a asp-controller="Recomendations" asp-action="Add">Add Review</a></li>
                     </ul>
 
                 </li>
-                
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a  asp-controller="Contact" asp-action="Index">Contact</a></li>
+
+
+                <li><a asp-controller="Contact" asp-action="Index">Contact</a></li>
 
             </ul>
         </nav><!-- .nav-menu -->
 
     </header><!-- End Header -->
-    
+
 
     <main id="main">
         @RenderBody()
-        
+
 
     </main><!-- End #main -->
     <!-- ======= Footer ======= -->
@@ -114,6 +114,9 @@
     <script src="~/assets/vendor/owl.carousel/owl.carousel.min.js"></script>
     <script src="~/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
     <script src="~/assets/vendor/venobox/venobox.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.11/jquery.validate.unobtrusive.min.js"></script>
 
     <!-- Template Main JS File -->
     <script src="~/assets/js/main.js"></script>
