@@ -84,6 +84,20 @@ namespace ColmSheehan.Models
             };
             if (this.Email.Contains("isis.org"))
                 yield return new ValidationResult("Your organisation isn't allowed to leave reviews", new[] { "Email" });
+            List<Recommendation> recommendations = DB.recommendations;Boolean IdExists = false;
+            foreach (Recommendation rec in recommendations)
+            {
+                if (rec.Id == this.Id)
+                {
+                    string strOutput = rec.Author + "," + rec.Email + "," + rec.Text + "," + rec.Age + "," + rec.Id;
+
+                    IdExists = true;
+                }
+            };
+            if (IdExists)
+                yield return new ValidationResult("This id has been Taken", new[] { "Id" });
+            if (this.Age < 16 || this.Age > 100)
+                yield return new ValidationResult("Please Enter A valid Age", new[] { "Age" });
         }
     }
 }
