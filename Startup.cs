@@ -49,8 +49,13 @@ namespace ColmSheehan
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
-                    name: "default",
+                    name: "product",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
+                endpoints.MapControllerRoute(
+                    name: "default",
+                    pattern: "Product/{id?}",
+                    new {controller = "Home", action = "Product"}
+                    );    
             });
         }
     }

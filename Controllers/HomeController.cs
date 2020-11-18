@@ -23,6 +23,11 @@ namespace ColmSheehan.Controllers
             return View();
         }
 
+        public IActionResult Product(int id)
+        {
+            return Content("The product id is: " + id);
+        }
+
         public IActionResult Privacy()
         {
             return View();

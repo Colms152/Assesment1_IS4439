@@ -1,0 +1,39 @@
+﻿@model Recommendation
+@{
+    ViewData["Title"] = "Add Review";
+}
+
+<!-- ======= Hero Section ======= -->
+    <section id="">
+        <h1>
+            Page for adding reviews
+        </h1>
+        
+            @using (var form = Html.BeginForm())
+            {
+                @Html.ValidationSummary()
+
+                <div>
+                    @Html.LabelFor(m => m.Author)
+                    @Html.TextBoxFor(m => m.Author)
+                    @Html.ValidationMessageFor(m => m.Author)
+                </div>
+                <div>
+                    @Html.LabelFor(m => m.Text)
+                    @Html.TextBoxFor(m => m.Text)
+                    @Html.ValidationMessageFor(m => m.Text)
+                </div>
+                <div>
+                    @Html.LabelFor(m => m.Email)
+                    @Html.TextBoxFor(m => m.Email)
+                    @Html.ValidationMessageFor(m => m.Email)
+                </div>
+
+                <input type="submit" value="Submit" />
+            }
+        
+       
+
+
+    </section><!-- End Hero -->
+

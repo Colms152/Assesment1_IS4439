@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Recommendations";
+    List<Recommendation> recommendations = ViewBag.recommendations;
+}
+
+<!-- ======= Hero Section ======= -->
+    <section id="">
+        <h1>
+            Page for reviews
+        </h1>
+
+        @foreach (Recommendation rec in recommendations)
+        {
+            <div>
+                <h3>@rec.Author left this review</h3>
+
+                <p1>@rec.Text</p1>
+            </div>
+            
+        }
+        <h1> left this review</h1>
+
+        <p1>Here we display the info about review @ViewBag.ReviewId</p1>
+    </section><!-- End Hero -->
+
