@@ -13,17 +13,20 @@ namespace ColmSheehan.Models
             new Recommendation()
             {
                 Author = "Sam Lally",
-                Text = "He's a nice guy"
+                Text = "He's a nice guy",
+                Email = "123@123.ie"
             },
             new Recommendation()
             {
                 Author = "Andrea V",
-                Text = "He's a cool guy"
+                Text = "He's a cool guy",
+                Email = "123@123.ie"
             },
             new Recommendation()
             {
                 Author = "Andrea Rossi",
-                Text = "He's a decent guy"
+                Text = "He's a decent guy",
+                Email = "123@123.ie"
             },
 
         };
@@ -38,9 +41,9 @@ namespace ColmSheehan.Models
         protected override ValidationResult IsValid(object value, ValidationContext validationContext)
         {
                 String text = (String)value;
-                if (text.Contains("bad"))
+                if (text != null && text.Contains("bad"))
                 {
-                    return new ValidationResult("Please don't leave nagative reviews");
+                    return new ValidationResult("Please don't leave negative reviews");
                 }
                 return ValidationResult.Success;
                 /*Recommendation rec = (Recommendation)value;

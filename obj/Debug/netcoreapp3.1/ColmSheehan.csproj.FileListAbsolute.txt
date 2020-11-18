@@ -116,3 +116,4 @@ C:\Users\Colm Sheehan\source\repos\ColmSheehan\obj\Debug\netcoreapp3.1\Razor\Vie
 C:\Users\Colm Sheehan\source\repos\ColmSheehan\obj\Debug\netcoreapp3.1\Razor\Views\Recomendations\Index.cshtml.g.cs
 C:\Users\Colm Sheehan\source\repos\ColmSheehan\obj\Debug\netcoreapp3.1\Razor\Views\Recomendations\Thanks.cshtml.g.cs
 C:\Users\Colm Sheehan\source\repos\ColmSheehan\obj\Debug\netcoreapp3.1\Razor\Views\About\Index.cshtml.g.cs
+C:\Users\Colm Sheehan\source\repos\ColmSheehan\obj\Debug\netcoreapp3.1\Razor\Views\Contact\Index.cshtml.g.cs
