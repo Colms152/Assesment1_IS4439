@@ -1,7 +1,7 @@
 version: '3.5'
 services:
-  dotnet_webapp:
-    container_name: dotnet_webapp
+  dotnetwebapp:
+    containername: dotnet_webapp
     build: ./
     ports:
     - "80:80"  
